@@ -1,0 +1,44 @@
+[
+{
+    "id": 5,
+    "name": "Bänkpress",
+    "set": 3,
+    "rep": 4,
+    "isCompleted": false
+},
+{
+    "id": 6,
+    "name": "Upphopp",
+    "set": 4,
+    "rep": 4,
+    "isCompleted": false
+},
+{
+    "id": 12,
+    "name": "Benlyft",
+    "set": 3,
+    "rep": 5,
+    "isCompleted": false
+},
+{
+    "id": 15,
+    "name": "Biceps curls",
+    "set": 3,
+    "rep": 8,
+    "isCompleted": true
+},
+{
+    "id": 16,
+    "name": "Benlyft",
+    "set": 3,
+    "rep": 5,
+    "isCompleted": true
+},
+{
+    "id": 25,
+    "name": "Nacke",
+    "set": 5,
+    "rep": 124,
+    "isCompleted": false
+}
+]
