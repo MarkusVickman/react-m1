@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer>
-            <p>THIS IS THE Footer</p>
+            <p>Skapad av <b>Markus Vickman</b></p>
         </footer>
     )
 }
