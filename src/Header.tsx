@@ -4,7 +4,7 @@ function Header() {
 
     return (
         <header>
-            <h2>THIS IS THE GEADER</h2>
+            <h1>Min träningslista</h1>
         </header>
     )
 }

@@ -1,0 +1,28 @@
+.big-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+
+    .big-container {
+        max-width: 780px;
+    }
+
+  }
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+
+    .big-container {
+        max-width: 390px;
+    }
+
+  }
+
+@media only screen and (max-width: 500px) {
+    .big-container {
+        max-width: 360px;
+    }
+
+}

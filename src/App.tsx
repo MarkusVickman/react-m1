@@ -10,7 +10,7 @@ function App() {
 
     return (
     <>
-    <div>
+    <div className='big-container'>
       {workouts.map((workout) => <Workout workout={workout} key={workout.id} />)}
 
     </div>

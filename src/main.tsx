@@ -7,10 +7,14 @@ import Footer from './Footer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
-    <main>
-      <App />
-    </main>
-    <Footer />
+    <div className='page-container'>
+      <div className="page-height-without-footer">
+        <Header />
+        <main>
+          <App />
+        </main>
+      </div>
+      <Footer />
+    </div>
   </StrictMode>,
 )
