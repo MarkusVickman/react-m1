@@ -1,9 +1,9 @@
 interface WorkoutTypes {
 
     id: number;
+    day: number;
     name: string;
     set: number;
-    rep: number;
     isCompleted: boolean;
 
   }

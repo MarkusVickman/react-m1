@@ -1,44 +1,128 @@
 [
 {
+    "id": 1,
+    "day": 1,
+    "name": "Marklyft",
+    "set": 6,
+    "isCompleted": false
+},
+{
+    "id": 2,
+    "day": 1,
+    "name": "Rygg (dragövning)",
+    "set": 6,
+    "isCompleted": false
+},
+{
+    "id": 3,
+    "day": 1,
+    "name": "Biceps",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 4,
+    "day": 1,
+    "name": "Baksida axlar",
+    "set": 5,
+    "isCompleted": false
+},
+{
     "id": 5,
-    "name": "Bänkpress",
-    "set": 3,
-    "rep": 4,
+    "day": 1,
+    "name": "Axlar mitt",
+    "set": 5,
     "isCompleted": false
 },
 {
     "id": 6,
-    "name": "Upphopp",
-    "set": 4,
-    "rep": 4,
+    "day": 1,
+    "name": "Valfri extra",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 7,
+    "day": 2,
+    "name": "Benspark",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 8,
+    "day": 2,
+    "name": "Lutad hantelpress",
+    "set": 6,
+    "isCompleted": false
+},
+{
+    "id": 9,
+    "day": 2,
+    "name": "Triceps",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 10,
+    "day": 2,
+    "name": "Axlar",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 11,
+    "day": 2,
+    "name": "Lårcurl (baksida)",
+    "set": 5,
     "isCompleted": false
 },
 {
     "id": 12,
-    "name": "Benlyft",
-    "set": 3,
-    "rep": 5,
+    "day": 2,
+    "name": "Valfri extra",
+    "set": 5,
+    "isCompleted": false
+},
+{
+    "id": 13,
+    "day": 3,
+    "name": "Knäböj",
+    "set": 6,
+    "isCompleted": false
+},
+{
+    "id": 14,
+    "day": 3,
+    "name": "Bänkpress",
+    "set": 6,
     "isCompleted": false
 },
 {
     "id": 15,
-    "name": "Biceps curls",
-    "set": 3,
-    "rep": 8,
-    "isCompleted": true
+    "day": 3,
+    "name": "Rygg (dragövning)",
+    "set": 5,
+    "isCompleted": false
 },
 {
     "id": 16,
-    "name": "Benlyft",
-    "set": 3,
-    "rep": 5,
-    "isCompleted": true
+    "day": 3,
+    "name": "Mage",
+    "set": 5,
+    "isCompleted": false
 },
 {
-    "id": 25,
-    "name": "Nacke",
+    "id": 17,
+    "day": 3,
+    "name": "Vader",
     "set": 5,
-    "rep": 124,
+    "isCompleted": false
+},
+{
+    "id": 18,
+    "day": 3,
+    "name": "Valfri extra",
+    "set": 5,
     "isCompleted": false
 }
 ]
