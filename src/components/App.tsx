@@ -18,7 +18,7 @@ function App() {
 
   const { day1, day2, day3 } = trainingDays;
 
-  const resetAll = (event: React.MouseEvent) => {
+  const resetAll = () => {
 
     const newWorkouts = new LocalStorageWorkouts();
 
