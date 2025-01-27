@@ -53,9 +53,6 @@ export class LocalStorageWorkouts {
             }
         });
 
-        console.log(id);
-
-
         localStorage.setItem("workouts", JSON.stringify(this.workouts));
 
         return testBool
