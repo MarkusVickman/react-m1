@@ -12,6 +12,12 @@ h2 {
     box-sizing: border-box;
 }
 
+
+.workout-container:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 8px 0px, rgba(60, 64, 67, 0.15) 0px 4px 12px 4px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 500px) {
 
     .workout-container {

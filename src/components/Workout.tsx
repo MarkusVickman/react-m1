@@ -5,18 +5,16 @@ import { LocalStorageWorkouts } from './LocalStoredWorkouts.tsx';
 
 function Workout({ workout }: { workout: WorkoutTypes }) {
 
-  const localStorageWorkouts = new LocalStorageWorkouts();
-
-
   const completedStyle = { backgroundColor: "rgba(0, 164, 0, 0.3)" }
   const notCompletedStyle = { backgroundColor: "rgba(255, 0, 0, 0.4)" }
 
   const [isCompleted, setIsCompleted] = useState(workout.isCompleted);
 
   const changeIfCompleted = async (event: React.MouseEvent) => {
+    const newWorkouts = new LocalStorageWorkouts();
     const target = event.currentTarget as HTMLDivElement;
 
-    let updatedIsCompleted = await localStorageWorkouts.ChangeIfCompleted(parseInt(target.id));
+    let updatedIsCompleted = await newWorkouts.changeIfCompleted(parseInt(target.id));
     setIsCompleted(updatedIsCompleted);
   }
 

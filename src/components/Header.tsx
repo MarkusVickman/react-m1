@@ -1,5 +1,5 @@
 import './Header.css'
-import banner from './assets/workout-banner.jpg'
+import banner from '../assets/workout-banner.jpg'
 
 function Header({title}: { title: string}) {
 

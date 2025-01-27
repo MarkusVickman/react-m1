@@ -1,0 +1,47 @@
+.big-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.button {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-style: none;
+    font-size: 1.1em;
+    background-color: rgba(0, 126, 48, 0.397);
+    text-align: center;
+}
+
+.button:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 8px 0px, rgba(60, 64, 67, 0.15) 0px 4px 12px 4px;
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+
+    .big-container {
+        max-width: 780px;
+    }
+
+  }
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+
+    .big-container {
+        max-width: 390px;
+    }
+
+  }
+
+@media only screen and (max-width: 500px) {
+    .big-container {
+        max-width: 360px;
+    }
+
+}

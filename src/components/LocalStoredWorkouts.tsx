@@ -1,4 +1,4 @@
-import data from './assets/data.json'
+import data from '../assets/data.json'
 import WorkoutTypes from "./WorkoutTypes-interface"
 
 export class LocalStorageWorkouts {
@@ -9,10 +9,15 @@ export class LocalStorageWorkouts {
         if (!localStorage.getItem("workouts")) {
             localStorage.setItem("workouts", JSON.stringify(data));
         }
+        this.loadWorkouts();
+    }
+
+    loadWorkouts() {
         let localStoredWorkouts = localStorage.getItem("workouts");
         if (localStoredWorkouts) {
             this.workouts = JSON.parse(localStoredWorkouts);
         }
+
     }
 
 
@@ -38,8 +43,9 @@ export class LocalStorageWorkouts {
         return { day1, day2, day3 }
     }
 
-    ChangeIfCompleted(id: number): boolean {
+    changeIfCompleted(id: number): boolean {
         let testBool: boolean = false;
+
         this.workouts.forEach(workout => {
 
             if (workout.id == id) {
@@ -56,6 +62,10 @@ export class LocalStorageWorkouts {
         localStorage.setItem("workouts", JSON.stringify(this.workouts));
 
         return testBool
+    }
+
+    resetWeek(): void {
+        localStorage.setItem("workouts", JSON.stringify(data));
     }
 
 }
