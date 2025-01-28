@@ -4,6 +4,7 @@ import './index.css'
 import App from './components/App.tsx'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration.ts";
 
 //Huvudvyn jag har lagt till lite taggar och komponenter för att de ska visas på rätt plats.
 //Header får sin H1-titel som props
@@ -21,3 +22,4 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 )
 
+serviceWorkerRegistration.register();
