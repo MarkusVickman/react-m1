@@ -27,7 +27,7 @@ Filer för att lösa detta:
 
 Datafilen data.json innehåller data enligt detta Interface:
 
-´´
+```
 
 interface WorkoutTypes {
     id: number;
@@ -37,12 +37,12 @@ interface WorkoutTypes {
     isCompleted: boolean;
   }
 
-´´
+```
 
 ## Testa
-För att testa eller bygga vidare på projektet behöver repot klonas och kommandot ´´ npm install ´´ ska köras i terminalen.
-För att testköra ´´ npm run dev ´´
-För att publicera ´´ npm run build ´´
+För att testa eller bygga vidare på projektet behöver repot klonas och kommandot ` npm install ` ska köras i terminalen.
+För att testköra ` npm run dev `
+För att publicera ` npm run build `
 
 **Markus Vickman**
 **MAVI2302**
