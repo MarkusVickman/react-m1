@@ -24,3 +24,25 @@ Filer för att lösa detta:
 * Klassfilen LocalStoredWorkouts.tsx där klassen sköter hantering av data.json samt lagring och läsning i localstorage.
 * Komponentfilerna App.tsx, Workout.tsx, Header.tsx, Footer.tsx, WorkoutInfo.tsx.
 * PWA-stöd med ServiceWorker, Manifest samt specifika ikoner för detta.
+
+Datafilen data.json innehåller data enligt detta Interface:
+
+´´
+
+interface WorkoutTypes {
+    id: number;
+    day: number;
+    name: string;
+    set: number;
+    isCompleted: boolean;
+  }
+
+´´
+
+## Testa
+För att testa eller bygga vidare på projektet behöver repot klonas och kommandot ´´ npm install ´´ ska köras i terminalen.
+För att testköra ´´ npm run dev ´´
+För att publicera ´´ npm run build ´´
+
+**Markus Vickman**
+**MAVI2302**
