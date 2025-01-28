@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# React Moment 1
+Återigen en träningswebbplats. Denna webbplats ger möjligheten för användare att följa och träna efter ett specifikt träningsschema. Denna webbplats har stöd för PWA så ladda gärna hem och testa.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Besök webbplatsen [Min träningsvecka](https://workout-week.netlify.app/).
 
-Currently, two official plugins are available:
+## Uppgift
+Uppgiften gick ut på att skapa en react webbplats programmerad i TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Krav:**
+* Design efter wireframe
+* Sidhuvud med H1 som tas in som props
+* Sidfot
+* Huvudinnehåll som skrivs ut dynamiskt i komponenterna med map-funktionen av en array med objekt.
+* Responsiv för olika enheter
+* Komponentspecifik CSS
+* JSX-syntax, variabler, props och vilkor.
 
-## Expanding the ESLint configuration
+## Lösning
+Webbplatsen använder många komponenten. De två huvudkomponenterna är App.tsx och Workout.tsx. 
+App.tsx är parent till Workout och skickar med props till Workout. I workout skrivs träningsinläggen ut enligt datan från App.tsx. Workout använder också useState för att ändra stil och text vid klick på inlägg. App.tsx hämtar och ändrar data från klassen LocalStoredWorkouts.tsx.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Filer för att lösa detta:
+* Filen WorkoutTypes-interface.tsx med interfacen "WorkoutType"
+* Klassfilen LocalStoredWorkouts.tsx där klassen sköter hantering av data.json samt lagring och läsning i localstorage.
+* Komponentfilerna App.tsx, Workout.tsx, Header.tsx, Footer.tsx, WorkoutInfo.tsx.
+* PWA-stöd med ServiceWorker, Manifest samt specifika ikoner för detta.
