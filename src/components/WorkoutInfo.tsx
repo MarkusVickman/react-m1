@@ -1,5 +1,6 @@
 import './WorkoutInfo.css'
 
+//En komponent som enbart returnerar text
 function WorkoutInfo() {
 
     return (

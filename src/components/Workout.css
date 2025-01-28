@@ -1,3 +1,8 @@
+/*
+CSS är specifik till Workout.tsx.
+Styling av klass workout-container är styling till alla mindre inlägg (kanske borde hetat small-container)
+*/
+
 h2 {
     text-align: center;
 }

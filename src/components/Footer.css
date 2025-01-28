@@ -1,3 +1,7 @@
+/*
+CSS är specifik till Footer.tsx.
+*/
+
 footer {
     height: 50px;
     background-color: rgba(0, 126, 48, 0.397);

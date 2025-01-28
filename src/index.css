@@ -1,3 +1,8 @@
+/*
+Generell CSS.
+Styling av klass page-container är till för att sidans innehåll minst ska täcka skärmens visningshöjd.
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;

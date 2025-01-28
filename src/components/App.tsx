@@ -1,6 +1,5 @@
 import './App.css'
 import Workout from './Workout';
-//import data from './assets/data.json'
 import WorkoutTypes from "./WorkoutTypes-interface"
 import { LocalStorageWorkouts } from './LocalStoredWorkouts.tsx';
 import WorkoutInfo from './WorkoutInfo.tsx';
@@ -10,18 +9,22 @@ import { useState } from 'react'
 
 function App() {
 
+  //Skapar ny instans av klassen LocalStorageWorkouts
   const localStorageWorkouts = new LocalStorageWorkouts();
 
-  //const [day1, day2, day3, setIsCompleted] = useState(localStorageWorkouts.trainingDays());
-
+  //useState lagrar in tre object arrayer i traningDays objectet. 
   let [trainingDays, setTrainingDays] = useState(localStorageWorkouts.trainingDays());
 
+  //Destruerar objectet för att få ut tre object arrayer (undra om useState hanteringen borde varit här. Jag tar med mig det ;) )
   const { day1, day2, day3 } = trainingDays;
 
+  // En arrowfunktion som deklareras med en variabel
   const resetAll = () => {
 
+    //Ny instans av klass
     const newWorkouts = new LocalStorageWorkouts();
 
+    //Initierar metod för att resetta hela träningsveckan och ändrar värdet i State för trainingDays (kanske skulle day1, day2, day3 haft useState istället så kanske det hade fungerat bättre)
     newWorkouts.resetWeek();
     setTrainingDays(newWorkouts.trainingDays());
 
@@ -29,18 +32,11 @@ function App() {
     window.location.reload();
 
     return
-
   }
 
-
-  // Om du uppdaterar state med setTrainingDays
-  //setTrainingDays(newTrainingDays);
-
-
-
-  //const { day1, day2, day3 } = localStorageWorkouts.trainingDays();
-
-
+  /*
+  Returnerar utskrift till skärmen. Använder Interface från separat fil för att typsäkra. Skickar med props för att få tillbaka struktur.
+  */
   return (
     <>
       <div className='big-container'>

@@ -1,5 +1,6 @@
 import './Footer.css'
 
+//En superenkel footer
 function Footer() {
 
     return (

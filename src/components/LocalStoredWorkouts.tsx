@@ -1,10 +1,13 @@
 import data from '../assets/data.json'
 import WorkoutTypes from "./WorkoutTypes-interface"
 
+//En klass för att ladda in data från extern fil till localstorage med metoder för att manipulera localstorage
 export class LocalStorageWorkouts {
 
+    //Array med workout objekt
     workouts: WorkoutTypes[] = [];
 
+    //Konstuktorn läser in data från fil om det inte redan finns
     constructor() {
         if (!localStorage.getItem("workouts")) {
             localStorage.setItem("workouts", JSON.stringify(data));
@@ -12,6 +15,7 @@ export class LocalStorageWorkouts {
         this.loadWorkouts();
     }
 
+    //Laddar in data från localstorage till arrayen med workout objekt
     loadWorkouts() {
         let localStoredWorkouts = localStorage.getItem("workouts");
         if (localStoredWorkouts) {
@@ -20,14 +24,14 @@ export class LocalStorageWorkouts {
 
     }
 
-
+    //Metod som returnerar tre objectarrayer beroende på vilken dag de tillhör
     trainingDays(): { day1: WorkoutTypes[], day2: WorkoutTypes[], day3: WorkoutTypes[] } {
 
-        //let workouts: WorkoutTypes[] = [];
         let day1: WorkoutTypes[] = [];
         let day2: WorkoutTypes[] = [];
         let day3: WorkoutTypes[] = [];
 
+        //Sorterar data till tre olika arrayer
         this.workouts.forEach(workout => {
             if (workout.day == 1) {
                 day1.push(workout);
@@ -43,11 +47,13 @@ export class LocalStorageWorkouts {
         return { day1, day2, day3 }
     }
 
+    //Metod som ändrar om träningen är klar eller ej i localstorage samt returnerar bool som svar
     changeIfCompleted(id: number): boolean {
         let testBool: boolean = false;
 
+        //Kontrollerar hur id överens stämmer med vad som redan är lagrat (i localstorage då det är en ny instance som initierar construktor)
+        //Sen ändras värdet till true eller false i this.workout
         this.workouts.forEach(workout => {
-
             if (workout.id == id) {
                 if (workout.isCompleted == true) {
                     workout.isCompleted = false
@@ -59,11 +65,13 @@ export class LocalStorageWorkouts {
             }
         });
 
+        //till sist sparas det nya värdet i localstorage.
         localStorage.setItem("workouts", JSON.stringify(this.workouts));
 
         return testBool
     }
 
+    //Enkel reset metod som helt enkelt läser in datan igen från fil där alla träningar är markerade som oklara.
     resetWeek(): void {
         localStorage.setItem("workouts", JSON.stringify(data));
     }

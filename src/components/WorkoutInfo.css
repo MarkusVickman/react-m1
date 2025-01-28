@@ -1,3 +1,7 @@
+/*
+CSS är specifik till WorkoutInfo.tsx.
+Styling av klass medium-container styling texten som ska visas på sidan
+*/
 
 .medium-container {
     max-width: 780px;
