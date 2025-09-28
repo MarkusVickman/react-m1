@@ -33,7 +33,7 @@ function Workout({ workout, oneRm }: WorkoutProps) {
   // Kan ändra om klar eller ej med funktionen changeIfCompleted och dess id
   return (<article className="workout-container" style={isCompleted ? completedStyle : notCompletedStyle} id={(workout.id).toString()} onClick={changeIfCompleted}>
     <h2>{workout.name}</h2>
-    <p><b>Vikt: </b>{workout.weight}</p>
+    <p><b>Vikt: </b>100kg</p>
     <p><b>Antal Set: </b>{workout.set}</p>
     <p><b>Antal Rep: </b>{workout.rep}</p>
     <p><b>Utförd: </b>{isCompleted ? "Bra jobbat!" : "Skärpning!"}</p>
