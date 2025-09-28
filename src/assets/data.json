@@ -66,7 +66,7 @@
 {
     "id": 9,
     "day": 5,
-    "name": "Pass 2: Bänkpress 90%",
+    "name": "Pass 9: Bänkpress 90%",
     "set": 4,
     "rep": 4,
     "isCompleted": false
@@ -82,7 +82,7 @@
 {
     "id": 11,
     "day": 6,
-    "name": "Pass 2: Bänkpress 95%",
+    "name": "Pass 11: Bänkpress 95%",
     "set": 3,
     "rep": 3,
     "isCompleted": false
@@ -98,7 +98,7 @@
 {
     "id": 13,
     "day": 7,
-    "name": "Pass 2: Bänkpress 100%",
+    "name": "Pass 13: Bänkpress 100%",
     "set": 2,
     "rep": 2,
     "isCompleted": false
