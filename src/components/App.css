@@ -11,6 +11,17 @@ Styling av klass big-container vilket innehåller alla mindre inlägg
     margin-top: 25px;
 }
 
+input {
+width: 100px;
+height: 20px;
+margin: auto;
+}
+
+.center-div {
+width: 100%;
+text-align: center;
+}
+
 .button {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     transform: translate(-50%);
