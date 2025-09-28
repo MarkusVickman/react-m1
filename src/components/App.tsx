@@ -45,7 +45,7 @@ function App() {
     <>
       <div className='center-div'>
         <label>1 rep max</label>
-        <input type="number" name="onerm" id="onerm" value={oneRm} onChange={(event) => setOneRm(Number(event.target.value))} />
+        <input placeholder="0kg" type="number" name="onerm" id="onerm" value={oneRm} onChange={(event) => setOneRm(Number(event.target.value))} />
 
         <p>{oneRm}</p>
         </div>
