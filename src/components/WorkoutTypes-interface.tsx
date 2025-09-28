@@ -6,6 +6,7 @@ interface WorkoutTypes {
     day: number;
     name: string;
     set: number;
+    rep: number;
     isCompleted: boolean;
 
   }
