@@ -47,7 +47,6 @@ function App() {
         <label>1 rep max i kg</label>
         <input placeholder="0kg" max="500" min="10" type="number" name="onerm" id="onerm" value={oneRm} onChange={(event) => setOneRm(Number(event.target.value))} />
 
-        <p>{oneRm}</p>
         </div>
       <div className='big-container'>
         <h2>Vecka 1</h2>
