@@ -10,7 +10,7 @@ import { useState } from 'react'
 function App() {
 
   //use state för input till beräkning av 1rm
-  const [oneRm, setOneRm] = useState<number>(0);
+  const [oneRm, setOneRm] = useState<number>(50);
 
 
   //Skapar ny instans av klassen LocalStorageWorkouts
@@ -45,7 +45,7 @@ function App() {
     <>
       <div className='center-div'>
         <label>1 rep max</label>
-        <input placeholder="0kg" type="number" name="onerm" id="onerm" value={oneRm} onChange={(event) => setOneRm(Number(event.target.value))} />
+        <input placeholder="0kg" max="500" min="10" type="number" name="onerm" id="onerm" value={oneRm} onChange={(event) => setOneRm(Number(event.target.value))} />
 
         <p>{oneRm}</p>
         </div>
