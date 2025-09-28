@@ -28,6 +28,7 @@ function Workout({ workout }: { workout: WorkoutTypes }) {
   return (<article className="workout-container" style={isCompleted ? completedStyle : notCompletedStyle} id={(workout.id).toString()} onClick={changeIfCompleted}>
     <h2>{workout.name}</h2>
     <p><b>Antal Set: </b>{workout.set}</p>
+    <p><b>Antal Rep: </b>{workout.rep}</p>
     <p><b>Utförd: </b>{isCompleted ? "Bra jobbat!" : "Skärpning!"}</p>
   </article>
   )
