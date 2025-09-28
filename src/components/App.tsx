@@ -51,42 +51,42 @@ function App() {
         </div>
       <div className='big-container'>
         <h2>Vecka 1</h2>
-        {day1.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day1.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
         <h2>Vecka 2</h2>
-        {day2.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day2.map((workout: WorkoutTypes) => <Workout workout={workout} oneRm={oneRm} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
         <h2>Vecka 3</h2>
-        {day3.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day3.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
             <div className='big-container'>
         <h2>Vecka 4</h2>
-        {day4.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day4.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
         <h2>Vecka 5</h2>
-        {day5.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day5.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
         <h2>Vecka 6</h2>
-        {day6.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day6.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
             <div className='big-container'>
         <h2>Vecka 7</h2>
-        {day7.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day7.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
         <h2>Vecka 8</h2>
-        {day8.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+        {day8.map((workout: WorkoutTypes) => <Workout workout={workout}  oneRm={oneRm} key={workout.id} />)}
 
       </div>
 
