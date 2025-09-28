@@ -3,8 +3,14 @@ import './Workout.css'
 import { useState } from 'react'
 import { LocalStorageWorkouts } from './LocalStoredWorkouts.tsx';
 
+// Define the props interface to include oneRm
+interface WorkoutProps {
+  workout: WorkoutTypes;
+  oneRm: number; // Add oneRm to the props
+}
+
 //Child som tar emot props enligt interface WorkoutTypes
-function Workout({ workout }: { workout: WorkoutTypes }) {
+function Workout({ workout, oneRm }: WorkoutProps) {
 
   //För att ändra stil beroende på klar eller ej. 
   const completedStyle = { backgroundColor: "rgba(0, 164, 0, 0.3)" }
