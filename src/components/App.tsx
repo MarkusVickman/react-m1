@@ -16,7 +16,7 @@ function App() {
   let [trainingDays, setTrainingDays] = useState(localStorageWorkouts.trainingDays());
 
   //Destruerar objectet för att få ut tre object arrayer (undra om useState hanteringen borde varit här. Jag tar med mig det ;) )
-  const { day1, day2, day3 } = trainingDays;
+  const { day1, day2, day3, day4, day5, day6, day7, day8 } = trainingDays;
 
   // En arrowfunktion som deklareras med en variabel
   const resetAll = () => {
@@ -40,21 +40,47 @@ function App() {
   return (
     <>
       <div className='big-container'>
-        <h2>Träningsdag 1</h2>
+        <h2>Vecka 1</h2>
         {day1.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
-        <h2>Träningsdag 2</h2>
+        <h2>Vecka 2</h2>
         {day2.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
 
       </div>
       <div className='big-container'>
-        <h2>Träningsdag 3</h2>
+        <h2>Vecka 3</h2>
         {day3.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
 
       </div>
-      <button className="button" onClick={resetAll}>Vecka klar</button>
+            <div className='big-container'>
+        <h2>Vecka 4</h2>
+        {day4.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+
+      </div>
+      <div className='big-container'>
+        <h2>Vecka 5</h2>
+        {day5.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+
+      </div>
+      <div className='big-container'>
+        <h2>Vecka 6</h2>
+        {day6.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+
+      </div>
+            <div className='big-container'>
+        <h2>Vecka 7</h2>
+        {day7.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+
+      </div>
+      <div className='big-container'>
+        <h2>Vecka 8</h2>
+        {day8.map((workout: WorkoutTypes) => <Workout workout={workout} key={workout.id} />)}
+
+      </div>
+
+      <button className="button" onClick={resetAll}>Starta om träningsperiod</button>
       <WorkoutInfo />
 
     </>
