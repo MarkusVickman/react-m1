@@ -48,19 +48,19 @@ export class LocalStorageWorkouts {
                 day3.push(workout);
             }
             if (workout.day == 4) {
-                day1.push(workout);
+                day4.push(workout);
             }
             if (workout.day == 5) {
-                day2.push(workout);
+                day5.push(workout);
             }
             if (workout.day == 6) {
-                day3.push(workout);
+                day6.push(workout);
             }
             if (workout.day == 7) {
-                day1.push(workout);
+                day7.push(workout);
             }
             if (workout.day == 8) {
-                day2.push(workout);
+                day8.push(workout);
             }
         });
 
