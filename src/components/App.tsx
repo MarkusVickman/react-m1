@@ -38,8 +38,6 @@ function App() {
     return
   }
 
-   console.log("Workout Weight:", day1.weight);
-
   /*
   Returnerar utskrift till skärmen. Använder Interface från separat fil för att typsäkra. Skickar med props för att få tillbaka struktur.
   */
