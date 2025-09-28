@@ -25,11 +25,16 @@ export class LocalStorageWorkouts {
     }
 
     //Metod som returnerar tre objectarrayer beroende på vilken dag de tillhör
-    trainingDays(): { day1: WorkoutTypes[], day2: WorkoutTypes[], day3: WorkoutTypes[] } {
+    trainingDays(): { day1: WorkoutTypes[], day2: WorkoutTypes[], day3: WorkoutTypes[], day4: WorkoutTypes[], day5: WorkoutTypes[], day6: WorkoutTypes[], day7: WorkoutTypes[], day8: WorkoutTypes[] } {
 
         let day1: WorkoutTypes[] = [];
         let day2: WorkoutTypes[] = [];
         let day3: WorkoutTypes[] = [];
+        let day4: WorkoutTypes[] = [];
+        let day5: WorkoutTypes[] = [];
+        let day6: WorkoutTypes[] = [];
+        let day7: WorkoutTypes[] = [];
+        let day8: WorkoutTypes[] = [];
 
         //Sorterar data till tre olika arrayer
         this.workouts.forEach(workout => {
@@ -42,9 +47,24 @@ export class LocalStorageWorkouts {
             if (workout.day == 3) {
                 day3.push(workout);
             }
+            if (workout.day == 4) {
+                day1.push(workout);
+            }
+            if (workout.day == 5) {
+                day2.push(workout);
+            }
+            if (workout.day == 6) {
+                day3.push(workout);
+            }
+            if (workout.day == 7) {
+                day1.push(workout);
+            }
+            if (workout.day == 8) {
+                day2.push(workout);
+            }
         });
 
-        return { day1, day2, day3 }
+        return { day1, day2, day3, day4, day5, day6, day7, day8 }
     }
 
     //Metod som ändrar om träningen är klar eller ej i localstorage samt returnerar bool som svar
