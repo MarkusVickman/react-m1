@@ -5,7 +5,8 @@ Styling av klass big-container vilket innehåller alla mindre inlägg
 
 .big-container {
     width: 100%;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
+    max-width: 780px;
     margin: auto;
     margin-top: 25px;
 }
