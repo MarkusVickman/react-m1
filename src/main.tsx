@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className='page-container'>
       <div className="page-height-without-footer">
-        <Header title={"Min Träningsvecka"} />
+        <Header title={"Hirvis bänkpressprogram"} />
         <main>
           <App />
         </main>
