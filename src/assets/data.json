@@ -3,6 +3,7 @@
     "id": 1,
     "day": 1,
     "name": "Pass 1: Bänkpress 70%",
+    "weight": 0.7,
     "set": 8,
     "rep": 8,
     "isCompleted": false
@@ -11,6 +12,7 @@
     "id": 2,
     "day": 1,
     "name": "Pass 2: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -18,7 +20,8 @@
 {
     "id": 3,
     "day": 2,
-    "name": "Pass 3: Bänkpress 75%",
+    "name": "Pass 3: Bänkpress 75%",    
+    "weight": 0.75,
     "set": 7,
     "rep": 7,
     "isCompleted": false
@@ -27,6 +30,7 @@
     "id": 4,
     "day": 2,
     "name": "Pass 4: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -35,6 +39,7 @@
     "id": 5,
     "day": 3,
     "name": "Pass 5: Bänkpress 80%",
+    "weight": 0.8,
     "set": 6,
     "rep": 6,
     "isCompleted": false
@@ -43,6 +48,7 @@
     "id": 6,
     "day": 3,
     "name": "Pass 6: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -51,6 +57,7 @@
     "id": 7,
     "day": 4,
     "name": "Pass 7: Bänkpress 85%",
+    "weight": 0.85,
     "set": 5,
     "rep": 5,
     "isCompleted": false
@@ -59,6 +66,7 @@
     "id": 8,
     "day": 4,
     "name": "Pass 8: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -67,6 +75,7 @@
     "id": 9,
     "day": 5,
     "name": "Pass 9: Bänkpress 90%",
+    "weight": 0.9,
     "set": 4,
     "rep": 4,
     "isCompleted": false
@@ -75,6 +84,7 @@
     "id": 10,
     "day": 5,
     "name": "Pass 10: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -83,6 +93,7 @@
     "id": 11,
     "day": 6,
     "name": "Pass 11: Bänkpress 95%",
+    "weight": 0.95,
     "set": 3,
     "rep": 3,
     "isCompleted": false
@@ -91,6 +102,7 @@
     "id": 12,
     "day": 6,
     "name": "Pass 12: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -99,6 +111,7 @@
     "id": 13,
     "day": 7,
     "name": "Pass 13: Bänkpress 100%",
+    "weight": 1,
     "set": 2,
     "rep": 2,
     "isCompleted": false
@@ -107,6 +120,7 @@
     "id": 14,
     "day": 7,
     "name": "Pass 14: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
@@ -115,6 +129,7 @@
     "id": 15,
     "day": 8,
     "name": "Pass 15: Bänkpress 105%",
+    "weight": 1.05,
     "set": 1,
     "rep": 1,
     "isCompleted": false
@@ -123,6 +138,7 @@
     "id": 16,
     "day": 8,
     "name": "Pass 16: Bänkpress 90%",
+    "weight": 0.9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
