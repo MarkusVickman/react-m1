@@ -29,12 +29,13 @@ function Workout({ workout, oneRm }: WorkoutProps) {
     setIsCompleted(updatedIsCompleted);
   }
 
+   console.log("Workout Weight:", workout.weight);
+  
   //Tar emot props och skriver ut värden på rätt plats med Vilkor för att bestäma stil och text som skrivs ut.
   // Kan ändra om klar eller ej med funktionen changeIfCompleted och dess id
   return (<article className="workout-container" style={isCompleted ? completedStyle : notCompletedStyle} id={(workout.id).toString()} onClick={changeIfCompleted}>
     <h2>{workout.name}</h2>
     <p><b>Vikt: </b>{(workout.weight * oneRm).toFixed(2)}kg</p>
-    {(console.log(workout.weight))}
     <p><b>Vikt: </b>{workout.weight}</p>
     <p><b>Antal Set: </b>{workout.set}</p>
     <p><b>Antal Rep: </b>{workout.rep}</p>
