@@ -40,7 +40,7 @@ export class LocalStorageWorkouts {
         this.workouts.forEach(workout => {
             if (workout.day == 1) {
                 day1.push(workout);
-                console.log(workout.weight);
+                console.log(workout);
             }
             if (workout.day == 2) {
                 day2.push(workout);
