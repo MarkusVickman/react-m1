@@ -3,7 +3,7 @@
     "id": 1,
     "day": 1,
     "name": "Pass 1: Bänkpress 70%",
-    "weight": 0.7,
+    "weight": 7,
     "set": 8,
     "rep": 8,
     "isCompleted": false
@@ -12,7 +12,7 @@
     "id": 2,
     "day": 1,
     "name": "Pass 2: Bänkpress 90%",
-    "weight": 0.9,
+    "weight": 0,9,
     "set": 8,
     "rep": 1,
     "isCompleted": false
