@@ -1,4 +1,4 @@
-# React Moment 1
+# HIRVIS - React
 Återigen en träningswebbplats. Denna webbplats ger möjligheten för användare att följa och träna efter ett specifikt träningsschema. Denna webbplats har stöd för PWA så ladda gärna hem och testa.
 
 Besök webbplatsen [Min träningsvecka](https://workout-week.netlify.app/).
