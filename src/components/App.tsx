@@ -3,15 +3,22 @@ import Workout from './Workout';
 import WorkoutTypes from "./WorkoutTypes-interface"
 import { LocalStorageWorkouts } from './LocalStoredWorkouts.tsx';
 import WorkoutInfo from './WorkoutInfo.tsx';
-import { useState } from 'react'
-
+import { useEffect, useState } from 'react'
 
 
 function App() {
 
-  //use state för input till beräkning av 1rm
-  const [oneRm, setOneRm] = useState<number>(50);
+  // Uppdaterar Visning av vikt
+  const [oneRm, setOneRm] = useState<number>(() => {
+    const saved = localStorage.getItem("weight");
+    const parsed = saved !== null ? Number(saved) : 50;
+    return Number.isFinite(parsed) ? parsed : 50;
+  });
 
+  // Lagrar vikt i localstorage
+  useEffect(() => {
+    localStorage.setItem("weight", String(oneRm));
+  }, [oneRm]);
 
   //Skapar ny instans av klassen LocalStorageWorkouts
   const localStorageWorkouts = new LocalStorageWorkouts();
