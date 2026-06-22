@@ -20,8 +20,6 @@ function App() {
     localStorage.setItem("weight", String(oneRm));
   }, [oneRm]);
 
-  const localStoredWeight = localStorage.getItem("weight");
-
   //Skapar ny instans av klassen LocalStorageWorkouts
   const localStorageWorkouts = new LocalStorageWorkouts();
 
